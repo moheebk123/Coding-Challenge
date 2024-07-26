@@ -1,5 +1,7 @@
 # Coding-Challenge-One
 
+Live Link of Project - <a href="https:moheeb-khan-coding-challenge-one.vercel.app">Visit</a>
+
 In this assignment, I implementing three tasks based on provided Figma design provided by Chai aur Code. The tasks are as follows:
 
 1. OTP Form
@@ -22,4 +24,7 @@ Include a search option to filter the batches
 
 
 **Images of Assignment**
-<img src="/src/assets/image.png">
+<img src="/src/assets/otp-form.png">
+<br>
+<img src="/src/assets/batches.png">
+<br>
