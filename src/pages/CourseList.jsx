@@ -1,5 +1,5 @@
-import data from "../../data/data.json";
-import thumbnail from "../../assets/thumbnail.png";
+import data from "../data/data.json";
+import thumbnail from "../assets/thumbnail.png";
 import {
   closestCorners,
   DndContext,
@@ -9,7 +9,7 @@ import {
   // useSensor,
   // useSensors,
 } from "@dnd-kit/core";
-import Header from "../../components/Header";
+import Header from "../components/Header";
 import { useEffect, useState } from "react";
 import {
   arrayMove,
@@ -29,6 +29,9 @@ function CourseList() {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
+    alert(
+      "You can drag and drop course. Also by double clicking on 3 dots you have 'Move to top' and 'Move to bottom' and 'Remove' options."
+    );
     setCourses(data);
   }, []);
 
@@ -123,14 +126,14 @@ const Course = ({ course, moveUp, moveDown, removeCourse }) => {
   };
 
   const handleMoveUp = () => {
-    moveUp(course.id)
-    setShowActionBox(false)
-  }
+    moveUp(course.id);
+    setShowActionBox(false);
+  };
 
   const handleMoveDown = () => {
-    moveDown(course.id)
-    setShowActionBox(false)
-  }
+    moveDown(course.id);
+    setShowActionBox(false);
+  };
 
   return (
     <div

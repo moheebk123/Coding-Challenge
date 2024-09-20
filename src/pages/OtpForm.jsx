@@ -1,5 +1,5 @@
 import React, { useState, useRef, useLayoutEffect } from "react";
-import Header from "../../components/Header";
+import Header from "../components/Header";
 
 function OtpForm() {
   const [verificationStatus, setVerificationStatus] =
@@ -13,9 +13,10 @@ function OtpForm() {
   ]);
 
   useLayoutEffect(() => {
+    alert("OTP is 1234. You can check it by wrong OPT as well.");
     inputRef.current[0].current.readOnly = false;
     inputRef.current[0].current.focus();
-  });
+  }, []);
 
   const handleInput = (event, index) => {
     const value = event.target.value.slice(0, 1);

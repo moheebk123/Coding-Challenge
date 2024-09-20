@@ -1,6 +1,6 @@
-import Header from "../../components/Header";
-import data from "../../data/data.json";
-import thumbnail from "../../assets/thumbnail.png";
+import Header from "../components/Header";
+import data from "../data/data.json";
+import thumbnail from "../assets/thumbnail.png";
 import { useEffect, useRef, useState } from "react";
 import propTypes from "prop-types";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
